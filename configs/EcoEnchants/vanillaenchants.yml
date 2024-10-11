@@ -1,0 +1,321 @@
+# Параметр редкости не влияет на ванильные чары.
+# Параметр отображения позволяет сортировать по редкости.
+
+aqua_affinity:
+  name: Подводник
+  description: Ускоряет разрушение блоков под водой
+  type: normal
+  rarity: rare
+
+bane_of_arthropods:
+  name: Бич членистоногих
+  description: 'Наносит &a%damage%&r урона по членистоногим и даёт медлительность 4 на &a%seconds%&r секунд'
+  placeholders:
+    damage: '2.5 * %level%'
+    seconds: '0.5 * %level%'
+  type: normal
+  rarity: uncommon
+
+binding_curse:
+  name: Проклятие несъёмности
+  description: Запрещает снимать предметы из слотов брони
+  type: curse
+  rarity: epic
+
+blast_protection:
+  name: Взрывоустойчивость
+  description: 'Уменьшает урон от взрывов на &a%damage%%&r и откидывание на &a%knockback%%'
+  placeholders:
+    damage: '%level% * 8'
+    knockback: '%level% * 15'
+  type: normal
+  rarity: rare
+
+breach:
+  name: Пробитие
+  description: 'Уменьшает эффективность брони цели на &a%placeholder%%'
+  placeholder: '15 * %level%'
+  type: normal
+  rarity: rare
+
+channeling:
+  name: Громовержец
+  description: Ударяет молнией туда, куда трезубец приземляется во время грозы
+  type: normal
+  rarity: epic
+
+density:
+  name: Плотность
+  description: 'Наносит &a%placeholder%&r урон(а) за каждый упавший блок'
+  placeholder: '0.5 * %level%'
+  type: normal
+  rarity: common
+
+depth_strider:
+  name: Подводная ходьба
+  description: 'Ускоряет плаванье и ходьбу под водой на &a%placeholder%%'
+  placeholder: '%level% * 33.333333'
+  type: normal
+  rarity: rare
+
+efficiency:
+  name: Эффективность
+  description: 'Ускоряет копание на &a%placeholder%%'
+  placeholder: '20 + 5 * %level%'
+  type: normal
+  rarity: common
+
+feather_falling:
+  name: Невесомость
+  description: 'Уменьшает урон от падения на &a%placeholder%%'
+  placeholder: '%level% * 12'
+  type: normal
+  rarity: uncommon
+
+fire_aspect:
+  name: Заговор огня
+  description: 'Поджигает цель на &a4&r секунды, нанося &a%placeholder%&r урон(а)'
+  placeholder: '(%level% * 4) - 1'
+  type: normal
+  rarity: rare
+
+fire_protection:
+  name: Огнеупорность
+  description: 'Уменьшает урон от огня на &a%damage%%&r и время горения на &a%time%%'
+  placeholders:
+    damage: '%level% * 8'
+    time: '%level% * 15'
+  type: normal
+  rarity: uncommon
+
+flame:
+  name: Воспламенение
+  description: Стрелы поджигают цель, нанося &a5&r урона
+  type: normal
+  rarity: rare
+
+fortune:
+  name: Удача
+  description: 'Увеличивает лут из руд на &a%placeholder%%'
+  placeholder: 'ceil(((1 / (%level% + 2)) + ((%level% + 1) / 2)) * 100 - 100)'
+  type: normal
+  rarity: rare
+
+frost_walker:
+  name: Ледоход
+  description: 'Замораживает воду в радиусе &a%placeholder%&r блоков'
+  placeholder: '%level% + 2'
+  type: normal
+  rarity: rare
+
+impaling:
+  name: Пронзатель
+  description: 'Наносит &a%placeholder%&r урон(а) по водным мобам'
+  placeholder: '%level% * 2.5'
+  type: normal
+  rarity: rare
+
+infinity:
+  name: Бесконечность
+  description: Стрелы не тратятся при стрельбе
+  type: normal
+  rarity: epic
+
+knockback:
+  name: Отдача
+  description: 'Увеличивает откидывание цели на &a%placeholder%%'
+  placeholder: '%level% * 85 + 20'
+  type: normal
+  rarity: uncommon
+
+looting:
+  name: Добыча
+  description: 'Увеличивает обычный дроп на &a%common%&r и редкий дроп на &a%rare%%'
+  placeholders:
+    common: '%level%'
+    rare: '%level%'
+  type: normal
+  rarity: rare
+
+loyalty:
+  name: Верность
+  description: Трезубец возвращается после броска
+  type: normal
+  rarity: uncommon
+
+luck_of_the_sea:
+  name: Везучий рыбак
+  description: 'Увеличивает на &a%placeholder%% шанс поймать сокровище'
+  placeholder: '2 * %level%'
+  type: normal
+  rarity: rare
+
+lure:
+  name: Приманка
+  description: 'Ускоряет время клёва на &a%placeholder%&r секунд'
+  placeholder: '%level% * 5'
+  type: normal
+  rarity: rare
+
+mending:
+  name: Починка
+  description: Восстанавливает прочность предмета при получении опыта
+  type: normal
+  rarity: rare
+
+multishot:
+  name: Тройной выстрел
+  description: Вылетает 3 стрелы при выстреле
+  type: normal
+  rarity: rare
+
+piercing:
+  name: Пронзающая стрела
+  description: 'Стрелы пролетают через &a%placeholder%&r цели, нанося урон'
+  placeholder: '%level% + 1'
+  type: normal
+  rarity: common
+
+power:
+  name: Сила
+  description: 'Увеличивает урон стрел на &a%placeholder%%'
+  placeholder: '25 * (%level% + 1)'
+  type: normal
+  rarity: common
+
+projectile_protection:
+  name: Защита от снарядов
+  description: 'Уменьшает урон от снарядов на &a%placeholder%%'
+  placeholder: '%level% * 8'
+  type: normal
+  rarity: uncommon
+
+protection:
+  name: Защита
+  description: 'Уменьшает входящий урон на &a%placeholder%%'
+  placeholder: '%level% * 4'
+  type: normal
+  rarity: common
+
+punch:
+  name: Откидывание
+  description: 'Увеличивает отбрасывание от стрел на &a%placeholder%&r блоков'
+  placeholder: '3 * %level%'
+  type: normal
+  rarity: rare
+
+quick_charge:
+  name: Быстрая перезарядка
+  description: 'Ускоряет перезарядку арбалета на &a%placeholder%&r секунд'
+  placeholder: '%level% * 0.25'
+  type: normal
+  rarity: uncommon
+
+respiration:
+  name: Подводное дыхание
+  description: 'Увеличивает время дыхания под водой на &a%seconds%&r сек. и даёт &a%chance%%&r шанс игнорировать урон от нехватки воздуха'
+  placeholders:
+    seconds: '15 * %level%'
+    chance: '%level% / (%level% + 1)'
+  type: normal
+  rarity: rare
+
+riptide:
+  name: Тягун
+  description: Трезубец поднимает игрока при нахождении в воде или во время дождя
+  type: normal
+  rarity: rare
+
+sharpness:
+  name: Острота
+  description: 'Наносит &a%placeholder%&r урон(а) по цели'
+  placeholder: '0.5 * %level% + 1'
+  type: normal
+  rarity: common
+
+silk_touch:
+  name: Шёлковое касание
+  description: При разрушении блока выпадает этот блок, а не лут
+  type: normal
+  rarity: epic
+
+smite:
+  name: Небесная кара
+  description: 'Наносит &a%placeholder%&r урона по нежити'
+  placeholder: '2.5 * %level%'
+  type: normal
+  rarity: uncommon
+
+soul_speed:
+  name: Скорость души
+  description: 'Ускоряет ходьбу по песку и почве душ на &a%placeholder%%'
+  placeholder: '(%level% * 0.105) + 1.3'
+  type: normal
+  rarity: epic
+
+sweeping:
+  name: Разящий клинок
+  description: 'Увеличивает урон от радиусной атаки на &a%placeholder%%'
+  placeholder: '%level% / (%level% + 1)'
+  type: normal
+  rarity: rare
+
+sweeping_edge:
+  name: Разящий клинок
+  description: 'Увеличивает урон от радиусной атаки на &a%placeholder%%'
+  placeholder: '%level% / (%level% + 1)'
+  type: normal
+  rarity: rare
+
+swift_sneak:
+  name: Проворство
+  description: 'Ускоряет ходьбу при приседании на &a%placeholder%%'
+  placeholder: 'min(%level% * 15, 100)'
+  type: normal
+  rarity: epic
+
+thorns:
+  name: Шипы
+  description: '&a%placeholder%%&r шанс отразить получаемый урон атакующему'
+  placeholder: '%level% * 15'
+  type: normal
+  rarity: epic
+
+unbreaking:
+  name: Прочность
+  description: 'Увеличивает прочность предмета на &a%placeholder%x'
+  placeholder: '%level% + 1'
+  type: normal
+  rarity: uncommon
+
+vanishing_curse:
+  name: Проклятие утраты
+  description: Предмет исчезает после смерти
+  type: curse
+  rarity: epic
+
+wind_burst:
+  name: Порыв ветра
+  description: 'Увеличивает отдачу от сокрушительных атак на &a%placeholder%'
+  placeholder: '1.15 + 0.35 * %level%'
+  type: normal
+  rarity: legendary
+
+#
+# Custom Enchants
+#
+
+decay_curse:
+  name: Проклятие распада
+  description: Уменьшает прочность предмета при передвижении
+  type: curse
+  rarity: legendary
+
+reaper:
+  name: Жрец
+  description: 'При ударе по монстру с &a%monsters%%&r или животному с &a%animals%%&r выпадает яйцо призыва'
+  placeholders:
+    monsters: '0.1 * %level%'
+    animals: '0.125 * %level%'
+  type: normal
+  rarity: special
