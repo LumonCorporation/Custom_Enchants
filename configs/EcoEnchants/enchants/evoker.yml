@@ -1,0 +1,108 @@
+display-name: "Заклинатель"
+description: "Вызывает &a%number%&r вредин на &a%seconds%&r секунд при нанесении урона по сущности"
+placeholders:
+  number: "%level%"
+  seconds: "30 * %level%"
+type: normal
+
+max-level: 5
+rarity: rare
+targets:
+  - axe
+  - bow
+  - crossbow
+  - mace
+  - sword
+  - trident
+conflicts: [ ]
+
+tradeable: false
+discoverable: false
+enchantable: false
+
+effects:
+  - effects:
+      - id: spawn_mobs
+        args:
+          amount: "%level%"
+          ticks_to_live: "600 * %level%"
+          health: 14
+          range: 16
+          entity: vex
+
+          delay: 100
+          cooldown: "30 * %level%"
+          send_cooldown_message: true
+          cooldown_message: "&cПерезарядка (%seconds%)"
+
+        conditions:
+          - id: above_xp_level
+            args:
+              level: "%level%"
+            not-met-effects:
+              - id: send_minimessage
+                args:
+                  message: "<red>Недостаточно уровней опыта (%player_level%/%level%)"
+                  action_bar: true
+
+      - id: run_command
+        args:
+          command: "experience add %player% -%level% levels"
+          cooldown: "30 * %level%"
+          send_cooldown_message: false
+
+        conditions:
+          - id: above_xp_level
+            args:
+              level: "%level%"
+
+      - id: swarm
+        args:
+          radius: 32
+          entities:
+            - vex
+
+    filters:
+      entities:
+        - blaze
+        - bogged
+        - breeze
+        - cave_spider
+        - drowned
+        - elder_guardian
+        - enderman
+        - endermite
+        - evoker
+        - ghast
+        - guardian
+        - hoglin
+        - husk
+        - iron_golem
+        - magma_cube
+        - phantom
+        - piglin
+        - piglin_brute
+        - pillager
+        - ravager
+        - shulker
+        - silverfish
+        - skeleton
+        - slime
+        - spider
+        - stray
+        - vindicator
+        - warden
+        - witch
+        - wither
+        - wither_skeleton
+        - zoglin
+        - zombie
+        - zombie_villager
+        - zombified_piglin
+
+    triggers:
+      - melee_attack
+      - bow_attack
+      - trident_attack
+
+conditions: [ ]
