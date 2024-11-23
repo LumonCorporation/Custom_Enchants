@@ -3,7 +3,7 @@
 <h1> Заклинатель </h1>
 Вызывает вредин на время при нанесении урона по сущности<br><br>
 
-[Конфигурация](https://github.com/LumonCorporation/Custom_Enchants/blob/main/configs/EcoEnchants/enchants/evoker.yml)
+[Конфигурация](https://github.com/LumonCorporation/Custom_Enchants/blob/main/plugins/EcoEnchants/enchants/evoker.yml)
 
 <table> <td>
 
